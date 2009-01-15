@@ -1,0 +1,5 @@
+Transactional SLIM/FIT runner for FitNesse/Java 
+
+This is an implementation of the Slim test runner for Fitnesse that wraps all tests into spring transactions and rolls back on the end of each test, to make data-driven tests instantly repeatable with minimal code and no configuration changes in the fixtures or the Spring context.
+
+for usage instructions including configuration see http://gojko.net/2009/01/14/transactional-springslim-test-runner/
