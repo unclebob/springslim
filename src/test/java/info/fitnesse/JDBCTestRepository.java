@@ -10,11 +10,10 @@ public class JDBCTestRepository implements TestRepository{
 	}
 	@Transactional
 	public void put(String value){
-		template.update("insert into test(name) values (?)",new Object[]{value});
+		template.update("insert into test(name) values (?)", value);
 	}
 	@Transactional
 	public int check (String value){
-		return template.queryForInt("select count(*) from test where name=?",new Object[]{value});
-	}		
-
+		return template.queryForInt("select count(*) from test where name=?", value);
+	}
 }
